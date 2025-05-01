@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TaskScheduler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event_name">Event name</string>
+    <string name="type_the_note_here">Type the note here</string>
+    <string name="date">Date</string>
+    <string name="reminds_me">Reminds me</string>
+    <string name="select_category">Select Category</string>
+    <string name="create_event">Create Event</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="update_first_name">Update First Name</string>
+    <string name="update_last_name">Update Last Name</string>
+    <string name="change_email">Change Email</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="update">Update</string>
+    <string name="past_tasks">Past Tasks</string>
+</resources>

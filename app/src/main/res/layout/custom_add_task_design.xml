@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_event"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/tvAddNewEvent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_below="@+id/tvAddNewEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/event_name"
+        android:id="@+id/etEventName"
+        android:background="@drawable/edit_text_custom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_below="@+id/etEventName"
+        android:id="@+id/etEventNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_the_note_here"
+        android:background="@drawable/edit_text_custom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_below="@+id/etEventNote"
+        android:hint="@string/date"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_custom"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDate"
+        android:hint="@string/reminds_me"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:id="@+id/toggleSwitch"
+        />
+    <LinearLayout
+        android:layout_below="@id/toggleSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llCategory">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_category"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:paddingStart="15dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreate"
+        android:layout_below="@id/llCategory"
+        android:layout_marginTop="20dp"
+        android:text="@string/create_event"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/tabColor"
+        />
+
+
+</RelativeLayout>
